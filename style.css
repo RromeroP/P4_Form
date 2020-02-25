@@ -1,0 +1,98 @@
+html {
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, textarea {
+    outline: none;
+}
+
+#container {
+    max-width: 600px;
+    border: solid 1px grey;
+}
+
+#container h1 {
+    margin-top: 0px;
+    margin-bottom: 7px;
+    padding: 10px;
+    border-bottom: dotted 1px grey;
+    color: #7CB021;
+    font-weight: normal;
+}
+
+#data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#name, #surname, #email, #tel, #book {
+    flex-basis: 46%;
+    padding: 7px 5px;
+    margin-bottom: 15px;
+    border: solid 1px grey;
+}
+
+#data textarea {
+    width: 96.5%;
+    border: solid 1px grey;
+}
+
+#submit {
+    margin: 3px auto 10px 8px;
+    background-color: #008ED8;
+    font-weight: 900;
+    padding: 5px;
+    color: whitesmoke;
+    border: outset 3px !important;
+}
+
+#options {
+    width: 97.3%;
+    margin-left: 1.4%;
+    margin-bottom: 7px;
+    border: solid 1px grey;
+}
+
+#book, #lbook {
+    display: none;
+}
+
+fieldset {
+    max-width: 558px;
+    margin: auto;
+    margin-bottom: 7px;
+    border: solid 1px grey;
+}
+
+fieldset p {
+    margin: 0;
+}
+
+.hidden {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@media screen and (max-width: 400px) {
+    #name, #surname, #email, #tel, #book {
+        flex-basis: 100%;
+        margin: 0px 3px 15px;
+    }
+    fieldset {
+        max-width: 310px;
+    }
+}
